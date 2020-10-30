@@ -1,0 +1,57 @@
+header{
+  background-color: $negro;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  nav{
+    ul{
+      li{
+        a{
+          color: $blanco !important;
+        }
+        a:hover{
+          color: $amarillo !important;
+        }
+      }
+    }
+  }
+  .navbar{
+    background-color:$negro;
+    .navbar-brand{
+      h1{
+        font-family: 'Sirin Stencil', cursive;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+      }
+      img{
+        height: 2.5rem;
+        display: block;
+        margin: auto;
+      }
+    }
+    .nav-link{
+      font-size: 1rem;
+      text-transform: uppercase;
+      padding-right: 16px;
+      color: $blanco;
+      margin-right: 1rem;
+    }
+    .navbar-toggler{
+      outline: none;
+    }
+    .dropdown-menu{
+      background-color: $negro;
+      min-width: 0;
+    }
+    .cart{
+      height: 2rem;
+    }
+  }
+  @media only screen and (min-width:992px){
+    .navbar{
+      height: 5rem;
+    }
+  }
+}
+

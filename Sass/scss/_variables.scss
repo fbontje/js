@@ -1,0 +1,72 @@
+/*-----fonts------*/
+$font-family1: 'Roboto', sans-serif;
+$font-family1: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+/*-----colores-----*/
+$negro:#212529;
+$blanco:#fff;
+$amarillo:#fed136;
+$naranja:#febf36;
+$gris:#6c757d;
+$d-amarillo:linear-gradient(to bottom, $naranja, $amarillo);
+
+/*-----mixin-----*/
+@mixin title {
+    font-size: 54px;
+    padding-left: 5px;
+    font-weight: 550;
+    border-left: solid $amarillo 10px;
+    text-align: left;
+}
+@mixin section{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    .title{
+        @include title;
+    }
+    h2{
+        font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+          font-weight: 550;
+          line-height: 1.2;
+          text-transform: uppercase;
+    }
+    h3{
+    font-size: 1rem;
+        font-weight: 400;
+        font-style: italic;
+        font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        margin-bottom: 4rem;
+        color: $gris;
+    }
+    h5{
+        font-weight: 550;
+        text-transform: uppercase;
+        margin-top: 1rem;
+    }
+}
+@mixin box($right, $height, $width){
+    position: absolute;
+    top: 0;
+    right:$right ;
+    background: linear-gradient(to bottom, $naranja, $amarillo) ;
+    height:$height ;
+    width: $width;
+}
+@mixin button($width,$br,$color,$bg) {
+    width: $width;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    transition: .3s;
+    color: $color;
+    background:$bg ;
+    cursor: pointer;
+    border-radius: $br;
+    font-weight: 700;
+}
+@mixin icon {
+    height: 2em;
+    position: relative;
+    width: 2.5em;
+}

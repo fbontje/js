@@ -1,0 +1,12 @@
+.page-colecciones{
+    @include section;
+    padding-top: 8rem;
+    .page-link{
+        background-color: $blanco;
+        color: $negro;
+        span{
+            color: $amarillo;
+            font-weight: bold;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+footer{
+    background-color: $negro;
+    color: $blanco;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 3rem;
+    .btn{
+        border-radius: 1.25rem !important;
+    }
+    a{
+        color: $amarillo;
+    }
+    .text-center{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+}
